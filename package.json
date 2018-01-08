@@ -1,0 +1,16 @@
+{
+  "name": "mock-server",
+  "version": "1.0.0",
+  "description": "simulated data without backend server eg:java server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JetFan",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "mockjs": "^1.0.1-beta3",
+    "supervisor": "0.12.0"
+  }
+}

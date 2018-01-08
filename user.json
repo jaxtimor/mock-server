@@ -1,0 +1,74 @@
+[
+  {
+    "url": "/paces_ccms_core/rest/pabank/logout/getSessionStatus",
+    "method": "post",
+    "response": {
+      "code": "0",
+      "message": "",
+      "body": {
+        "userStatus": "1"
+      }
+    }
+  },
+  {
+    "url": "/cust/pabank/manlian/queryFirstBrushEquity",
+    "method": "post",
+    "response": {
+      "code": "000000",
+      "message": "系统异常，请重试",
+      "body": {
+        "clientType": "215",
+        "couponStatus": "4",
+        "countEndTime": "20170809",
+        "qualStartTime": "20170909",
+        "qualEndTime": "20171009",
+        "configAmount": "",
+        "configNum": "",
+        "diffNum": "3"
+      }
+    }
+  },
+  {
+    "url": "/cust/pabank/manlian/applyFirstBrushEquity",
+    "method": "post",
+    "response": {
+      "code": "000000",
+      "message": "系统异常，请重试",
+      "body": {
+        "clientType": "215"
+      }
+    }
+  },
+  {
+    "url": "/rest/pabank/creditcard/slh/getFreeRateAndCardListInfo",
+    "method": "post",
+    "response": {
+      "code": "0",
+      "message": "系统异常，请重试",
+      "body": {
+        "validMoney": "30000",
+        "instList|1-10": [
+          {
+            "instNum|1-5": "3",
+            "feeRate": "0.03",
+            "originalDiscFeeRate": "0.0111",
+            "perPoundage": "1030",
+            "totalPoundage": "200",
+            "perAmt|1000-10000.2": 1,
+            "firstAmt": "6510.00",
+            "discountType": "D",
+            "instFeeDscnt": "0.81",
+            "waiveFeeAmt": "300",
+            "perAmtDetail": [1,3,1,5]
+          }
+        ],
+        "cardList|1-7": [
+          {
+            "cardNo": "6446********4461",
+            "cardIndex|+1": 1
+          }
+        ]
+      }
+    }
+  }
+]
