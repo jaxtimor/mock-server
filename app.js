@@ -1,13 +1,23 @@
 const express = require('express');
-const fs = require('fs')
 const Mock = require('mockjs')
 const util = require('util')
 const app = express();
+const fs = require('fs')
 
 
-const dataDes = JSON.parse(fs.readFileSync('./user.json'))
+var dataDes = JSON.parse(fs.readFileSync('./user.json'))
 
 
+
+fs.watch('./user.json', (eventType, filename) => {
+    console.log(`事件类型是: ${eventType}`);
+    if (filename) {
+        console.log(`提供的文件名: ${filename}`);
+        dataDes = JSON.parse(fs.readFileSync('./user.json'))
+    } else {
+        console.log('未提供文件名');
+    }
+});
 
 app.get('/*', function (req, res) {
     for(let o of dataDes){
