@@ -4,12 +4,14 @@
   "description": "simulated data without backend server eg:java server",
   "main": "app.js",
   "scripts": {
+  	"start":"supervisor app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "JetFan",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "express": "^4.16.2",
     "mockjs": "^1.0.1-beta3",
     "supervisor": "0.12.0"
   }
